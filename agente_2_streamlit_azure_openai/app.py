@@ -9,17 +9,13 @@ st.set_page_config(page_title="Asistente GOECOR", page_icon="📊")
 st.title("📊 Asistente de Datos - GOECOR (ONPE)")
 
 # 1. Cargar credenciales desde Secrets
-# os.environ["AZURE_OPENAI_API_KEY"] = st.secrets["AZURE_OPENAI_API_KEY"]
-# os.environ["AZURE_OPENAI_ENDPOINT"] = st.secrets["AZURE_OPENAI_ENDPOINT"]
+os.environ["AZURE_OPENAI_API_KEY"] = st.secrets["AZURE_OPENAI_API_KEY"]
+os.environ["AZURE_OPENAI_ENDPOINT"] = st.secrets["AZURE_OPENAI_ENDPOINT"]
 
-# server = st.secrets["FABRIC_SERVER"]
-# database = st.secrets["FABRIC_DATABASE"]
-# username = st.secrets["FABRIC_USER"]
-# password = st.secrets["FABRIC_PASSWORD"]
-
-server = "2fqia5pjhinuvfnqdhtmb5jioi-lvvsyh3do2oebadt6dgppesrre.datawarehouse.fabric.microsoft.com"
-database = "Ficha_Tecnica"
-username = "EnzoCamargo@iaworld.onmicrosoft.com"
+server = st.secrets["FABRIC_SERVER"]
+database = st.secrets["FABRIC_DATABASE"]
+username = st.secrets["FABRIC_USER"]
+password = st.secrets["FABRIC_PASSWORD"]
 
 
 # 2. Configurar la conexión SQL a Microsoft Fabric
