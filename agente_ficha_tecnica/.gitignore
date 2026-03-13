@@ -1,0 +1,6 @@
+# Ignorar secretos y variables de entorno
+.env
+
+# Ignorar datos pesados (opcional, pero recomendado para archivos de la ONPE)
+*.xlsx
+*.csv
