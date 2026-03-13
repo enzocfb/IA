@@ -24,7 +24,7 @@ def conectar_bd():
     # Fabric requiere Autenticación de Active Directory
     driver = "{ODBC Driver 18 for SQL Server}"
     params = urllib.parse.quote_plus(
-        f"DRIVER={{ODBC Driver 18 for SQL Server}};"
+        f"DRIVER={{ODBC Driver 17 for SQL Server}};"
         f"SERVER={server},1433;"
         f"DATABASE={database};"
         f"UID={username};"
